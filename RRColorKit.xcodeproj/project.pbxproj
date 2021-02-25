@@ -25,6 +25,8 @@
 		0A4840C125E820A30079AC14 /* GradientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4840C025E820A30079AC14 /* GradientProtocol.swift */; };
 		0A4840C925E820F80079AC14 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4840C825E820F80079AC14 /* Strings.swift */; };
 		0A4840D325E8226E0079AC14 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4840D225E8226E0079AC14 /* Assets.swift */; };
+		0A4840DA25E8259F0079AC14 /* View+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4840D925E8259F0079AC14 /* View+Font.swift */; };
+		0A4840E425E827050079AC14 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4840E325E827050079AC14 /* Text.swift */; };
 		OBJ_24 /* RRColorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* RRColorKit.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_42 /* RRColorKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* RRColorKitTests.swift */; };
@@ -54,6 +56,8 @@
 		0A4840C025E820A30079AC14 /* GradientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientProtocol.swift; sourceTree = "<group>"; };
 		0A4840C825E820F80079AC14 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		0A4840D225E8226E0079AC14 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		0A4840D925E8259F0079AC14 /* View+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Font.swift"; sourceTree = "<group>"; };
+		0A4840E325E827050079AC14 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		OBJ_12 /* RRColorKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRColorKitTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -99,6 +103,15 @@
 				0A4840D225E8226E0079AC14 /* Assets.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A4840D825E8258A0079AC14 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A4840D925E8259F0079AC14 /* View+Font.swift */,
+				0A4840E325E827050079AC14 /* Text.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* Tests */ = {
@@ -155,6 +168,7 @@
 				OBJ_9 /* RRColorKit.swift */,
 				0A4840C725E820EB0079AC14 /* Helpers */,
 				0A4840C625E820DD0079AC14 /* Protocols */,
+				0A4840D825E8258A0079AC14 /* Extensions */,
 			);
 			name = RRColorKit;
 			path = Sources/RRColorKit;
@@ -245,7 +259,9 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_24 /* RRColorKit.swift in Sources */,
+				0A4840DA25E8259F0079AC14 /* View+Font.swift in Sources */,
 				0A4840C125E820A30079AC14 /* GradientProtocol.swift in Sources */,
+				0A4840E425E827050079AC14 /* Text.swift in Sources */,
 				0A4840BB25E820800079AC14 /* ColorProtocol.swift in Sources */,
 				0A4840D325E8226E0079AC14 /* Assets.swift in Sources */,
 				0A4840C925E820F80079AC14 /* Strings.swift in Sources */,

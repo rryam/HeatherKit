@@ -16,6 +16,8 @@ struct TitleText {
 struct HeaderText {
     static let matchGradient = "Match this Gradient".uppercased()
     static let yourGradient = "Your Gradient".uppercased()
+    static let matchColor = "Match this Color".uppercased()
+    static let yourColor = "Your Color".uppercased()
     static let overallScore = "Overall score".uppercased()
 }
 
@@ -29,4 +31,14 @@ struct ButtonText {
 
 struct TabText {
 
+}
+
+struct LinkText {
+    static let creatorTwitterApp = "twitter://user?screen_name=rudrankriyam"
+    static let creatorTwitterWeb = "https://www.twitter.com/rudrankriyam"
+    static let creatorMail = "rudrankriyam@gmail.com"
+    static let chromaTwitterApp = "twitter://user?screen_name=chromagame_"
+    static let chromaTwitterWeb = "https://www.twitter.com/chromagame_"
+    static let gradientTwitterApp = "twitter://user?screen_name=gradientsgame"
+    static let gradientTwitterWeb = "https://www.twitter.com/gradientsgame"
 }
