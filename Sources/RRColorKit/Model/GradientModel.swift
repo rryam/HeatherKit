@@ -7,34 +7,22 @@
 
 import SwiftUI
 
-public class RGBRandomGradient: GradientProtocol {
-    public var startColor: ColorProtocol = RGBRandomColor()
-    public var endColor: ColorProtocol = RGBRandomColor()
+public class RGBRandomGradient: RGBGradientProtocol {
+    public var startColor: RGBColorProtocol = RGBRandomColor()
+    public var endColor: RGBColorProtocol = RGBRandomColor()
 }
 
-public class RGBUserGradient: GradientProtocol {
-    public var startColor: ColorProtocol = RGBUserStartColor()
-    public var endColor: ColorProtocol = RGBUserEndColor()
+public class RGBUserGradient: RGBGradientProtocol {
+    public var startColor: RGBColorProtocol = RGBUserStartColor()
+    public var endColor: RGBColorProtocol = RGBUserEndColor()
 }
 
-public class RGBUserStartColor: RGBColorProtocol {
-    public var red: Double = Constants.gradientStartColor
-    public var green: Double = Constants.gradientStartColor
-    public var blue: Double = Constants.gradientStartColor
+public class RGBLogoGradient: RGBGradientProtocol {
+    public var startColor: RGBColorProtocol = RGBLogoStartColor()
+    public var endColor: RGBColorProtocol = RGBLogoEndColor()
 }
 
-public class RGBUserEndColor: RGBColorProtocol {
-    public var red: Double = Constants.gradientEndColor
-    public var green: Double = Constants.gradientEndColor
-    public var blue: Double = Constants.gradientEndColor
-}
-
-public class RGBLogoGradient: GradientProtocol {
-    public var startColor: ColorProtocol = RGBLogoStartColor()
-    public var endColor: ColorProtocol = RGBLogoEndColor()
-}
-
-public class RGBTestGradient: GradientProtocol {
-    public var startColor: ColorProtocol = RGBTestStartColor()
-    public var endColor: ColorProtocol = RGBTestEndColor()
+public class RGBTestGradient: RGBGradientProtocol {
+    public var startColor: RGBColorProtocol = RGBTestStartColor()
+    public var endColor: RGBColorProtocol = RGBTestEndColor()
 }

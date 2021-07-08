@@ -8,13 +8,37 @@
 import SwiftUI
 
 public protocol GradientProtocol {
-    var startColor: ColorProtocol { get set }
-    var endColor: ColorProtocol { get set }
-
     func new() -> Gradient
 }
 
-extension GradientProtocol {
+public protocol RGBGradientProtocol: GradientProtocol {
+    var startColor: RGBColorProtocol { get set }
+    var endColor: RGBColorProtocol { get set }
+}
+
+extension RGBGradientProtocol {
+    public func new() -> Gradient {
+        Gradient(colors: [startColor.new(), endColor.new()])
+    }
+}
+
+public protocol HSBGradientProtocol: GradientProtocol {
+    var startColor: HSBColorProtocol { get set }
+    var endColor: HSBColorProtocol { get set }
+}
+
+extension HSBGradientProtocol {
+    public func new() -> Gradient {
+        Gradient(colors: [startColor.new(), endColor.new()])
+    }
+}
+
+public protocol CMYKGradientProtocol: GradientProtocol {
+    var startColor: CMYKColorProtocol { get set }
+    var endColor: CMYKColorProtocol { get set }
+}
+
+extension CMYKGradientProtocol {
     public func new() -> Gradient {
         Gradient(colors: [startColor.new(), endColor.new()])
     }

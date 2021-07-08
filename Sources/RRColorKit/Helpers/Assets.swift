@@ -28,8 +28,10 @@ public struct Constants {
         Double.random(in: 0...1)
     }
     
+    public static let customOpacity: Double = 0.7
     public static let customRadius: Double = 16
     public static let customBlurRadius: Double = 5
+    
     public static let gradientStartColor: Double = 75/255
     public static let gradientEndColor: Double = 175/255
 }

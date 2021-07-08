@@ -42,3 +42,15 @@ public class RGBLogoEndColor: RGBColorProtocol {
     public var green: Double = 90/255
     public var blue: Double = 242/255
 }
+
+public class RGBUserStartColor: RGBColorProtocol {
+    public var red: Double = Constants.gradientStartColor
+    public var green: Double = Constants.gradientStartColor
+    public var blue: Double = Constants.gradientStartColor
+}
+
+public class RGBUserEndColor: RGBColorProtocol {
+    public var red: Double = Constants.gradientEndColor
+    public var green: Double = Constants.gradientEndColor
+    public var blue: Double = Constants.gradientEndColor
+}
