@@ -9,25 +9,25 @@ import Foundation
 
 public struct Assets {
     // MARK:- SF Symbols
-    static let minus = "minus"
-    static let plus = "plus"
-    static let rightArrow = "chevron.right"
-    static let selected = "checkmark"
+    public static let minus = "minus"
+    public static let plus = "plus"
+    public static let rightArrow = "chevron.right"
+    public static let selected = "checkmark"
 
-    static let rgb = "circle.grid.hex"
-    static let hsb = "circle.grid.2x2"
-    static let cmy = "circles.hexagonpath"
-    static let history = "clock"
-    static let settings = "gear"
-    static let arcade = "gameController"
-    static let relax = "bolt.heart"
+    public static let rgb = "circle.grid.hex"
+    public static let hsb = "circle.grid.2x2"
+    public static let cmy = "circles.hexagonpath"
+    public static let history = "clock"
+    public static let settings = "gear"
+    public static let arcade = "gameController"
+    public static let relax = "bolt.heart"
 }
 
 public struct Constants {
-    static var random: Double {
+    public static var random: Double {
         Double.random(in: 0...1)
     }
     
-    static let gradientStartColor: Double = 75/255
-    static let gradientEndColor: Double = 175/255
+    public static let gradientStartColor: Double = 75/255
+    public static let gradientEndColor: Double = 175/255
 }

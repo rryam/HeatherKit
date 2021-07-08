@@ -8,24 +8,24 @@
 import Foundation
 
 public struct TitleText {
-    static let history = "history"
-    static let gradientGame = "gradient game".uppercased()
-    static let chromaGame = "chroma game".uppercased()
-    static let settings = "settings".uppercased()
+    public static let history = "history"
+    public static let gradientGame = "gradient game".uppercased()
+    public static let chromaGame = "chroma game".uppercased()
+    public static let settings = "settings".uppercased()
 }
 
 public struct HeaderText {
-    static let target = "target".uppercased()
-    static let yours = "yours".uppercased()
-    static let overallScore = "Overall score".uppercased()
+    public static let target = "target".uppercased()
+    public static let yours = "yours".uppercased()
+    public static let overallScore = "Overall score".uppercased()
 }
 
 public struct ButtonText {
-    static let share = "share".uppercased()
-    static let evaluate = "Evaluate".uppercased()
-    static let tryAgain = "try again".uppercased()
-    static let next = "next".uppercased()
-    static let showScore = "show".uppercased()
+    public static let share = "share".uppercased()
+    public static let evaluate = "Evaluate".uppercased()
+    public static let tryAgain = "try again".uppercased()
+    public static let next = "next".uppercased()
+    public static let showScore = "show".uppercased()
 }
 
 public struct TabText {
@@ -33,13 +33,13 @@ public struct TabText {
 }
 
 public struct LinkText {
-    static let creatorTwitterApp = "twitter://user?screen_name=rudrankriyam"
-    static let creatorTwitterWeb = "https://www.twitter.com/rudrankriyam"
-    static let creatorMail = "rudrankriyam@gmail.com"
-    static let chromaTwitterApp = "twitter://user?screen_name=chromagame_"
-    static let chromaTwitterWeb = "https://www.twitter.com/chromagame_"
-    static let gradientTwitterApp = "twitter://user?screen_name=gradientsgame"
-    static let gradientTwitterWeb = "https://www.twitter.com/gradientsgame"
+    public static let creatorTwitterApp = "twitter://user?screen_name=rudrankriyam"
+    public static let creatorTwitterWeb = "https://www.twitter.com/rudrankriyam"
+    public static let creatorMail = "rudrankriyam@gmail.com"
+    public static let chromaTwitterApp = "twitter://user?screen_name=chromagame_"
+    public static let chromaTwitterWeb = "https://www.twitter.com/chromagame_"
+    public static let gradientTwitterApp = "twitter://user?screen_name=gradientsgame"
+    public static let gradientTwitterWeb = "https://www.twitter.com/gradientsgame"
 }
 
 public enum TabItemType: Int, CaseIterable {
@@ -49,11 +49,11 @@ public enum TabItemType: Int, CaseIterable {
     case radient
     case more
     
-    var name: String {
+    public var name: String {
         String(describing: self).uppercased()
     }
     
-    var image: String {
+    public var image: String {
         switch self {
         case .rgb:
             return "circle.grid.hex"
