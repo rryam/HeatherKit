@@ -8,14 +8,14 @@
 import SwiftUI
 
 protocol GradientProtocol {
-    var leftColor: ColorProtocol { get set }
-    var rightColor: ColorProtocol { get set }
+    var startColor: ColorProtocol { get set }
+    var endColor: ColorProtocol { get set }
 
-    func newGradient() -> Gradient
+    func new() -> Gradient
 }
 
 extension GradientProtocol {
-    func newGradient() -> Gradient {
-        Gradient(colors: [leftColor.newColor(), rightColor.newColor()])
+    func new() -> Gradient {
+        Gradient(colors: [startColor.new(), endColor.new()])
     }
 }

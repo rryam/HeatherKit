@@ -9,15 +9,14 @@ import Foundation
 
 struct TitleText {
     static let history = "history"
-    static let gradientGame = "Gradient Game".uppercased()
-    static let chromaGame = "Chroma Game".uppercased()
+    static let gradientGame = "gradient game".uppercased()
+    static let chromaGame = "chroma game".uppercased()
+    static let settings = "settings".uppercased()
 }
 
 struct HeaderText {
-    static let matchGradient = "Match this Gradient".uppercased()
-    static let yourGradient = "Your Gradient".uppercased()
-    static let matchColor = "Match this Color".uppercased()
-    static let yourColor = "Your Color".uppercased()
+    static let target = "target".uppercased()
+    static let yours = "yours".uppercased()
     static let overallScore = "Overall score".uppercased()
 }
 
@@ -41,4 +40,31 @@ struct LinkText {
     static let chromaTwitterWeb = "https://www.twitter.com/chromagame_"
     static let gradientTwitterApp = "twitter://user?screen_name=gradientsgame"
     static let gradientTwitterWeb = "https://www.twitter.com/gradientsgame"
+}
+
+enum TabItemType: Int, CaseIterable {
+    case rgb = 1
+    case hsb
+    case cmyk
+    case radient
+    case more
+    
+    var name: String {
+        String(describing: self).uppercased()
+    }
+    
+    var image: String {
+        switch self {
+        case .rgb:
+            return "circle.grid.hex"
+        case .hsb:
+            return "circle.grid.2x2"
+        case .cmyk:
+            return "circles.hexagonpath"
+        case .radient:
+            return "person.2.wave.2.fill"
+        case .more:
+            return "gear"
+        }
+    }
 }
