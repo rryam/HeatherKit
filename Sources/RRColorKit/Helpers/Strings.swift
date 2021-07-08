@@ -32,6 +32,11 @@ public struct TabText {
 
 }
 
+public struct AppURL {
+    public static let gradientGame = URL(string: "https://apps.apple.com/app/id1479784361")!
+    public static let chromaGame = URL(string: "https://apps.apple.com/app/id1500196580")!
+}
+
 public struct LinkText {
     public static let creatorTwitterApp = "twitter://user?screen_name=rudrankriyam"
     public static let creatorTwitterWeb = "https://www.twitter.com/rudrankriyam"
