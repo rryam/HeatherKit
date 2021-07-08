@@ -45,6 +45,8 @@ public struct LinkText {
     public static let chromaTwitterWeb = "https://www.twitter.com/chromagame_"
     public static let gradientTwitterApp = "twitter://user?screen_name=gradientsgame"
     public static let gradientTwitterWeb = "https://www.twitter.com/gradientsgame"
+    
+    public init() {}
 }
 
 public enum TabItemType: Int, CaseIterable {

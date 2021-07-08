@@ -8,21 +8,41 @@
 import SwiftUI
 
 public class RGBRandomGradient: RGBGradientProtocol {
-    public var startColor: RGBColorProtocol = RGBRandomColor()
-    public var endColor: RGBColorProtocol = RGBRandomColor()
+    public var startColor: RGBColorProtocol
+    public var endColor: RGBColorProtocol
+    
+    public init(startColor: RGBColorProtocol = RGBRandomColor(), endColor: RGBColorProtocol = RGBRandomColor()) {
+        self.startColor = startColor
+        self.endColor = endColor
+    }
 }
 
 public class RGBUserGradient: RGBGradientProtocol {
-    public var startColor: RGBColorProtocol = RGBUserStartColor()
-    public var endColor: RGBColorProtocol = RGBUserEndColor()
+    public var startColor: RGBColorProtocol
+    public var endColor: RGBColorProtocol
+    
+    public init(startColor: RGBColorProtocol = RGBUserStartColor(), endColor: RGBColorProtocol = RGBUserEndColor()) {
+        self.startColor = startColor
+        self.endColor = endColor
+    }
 }
 
 public class RGBLogoGradient: RGBGradientProtocol {
-    public var startColor: RGBColorProtocol = RGBLogoStartColor()
-    public var endColor: RGBColorProtocol = RGBLogoEndColor()
+    public var startColor: RGBColorProtocol
+    public var endColor: RGBColorProtocol
+    
+    public init(startColor: RGBColorProtocol = RGBLogoStartColor(), endColor: RGBColorProtocol = RGBLogoEndColor()) {
+        self.startColor = startColor
+        self.endColor = endColor
+    }
 }
 
 public class RGBTestGradient: RGBGradientProtocol {
-    public var startColor: RGBColorProtocol = RGBTestStartColor()
-    public var endColor: RGBColorProtocol = RGBTestEndColor()
+    public var startColor: RGBColorProtocol
+    public var endColor: RGBColorProtocol
+    
+    public init(startColor: RGBColorProtocol = RGBTestStartColor(), endColor: RGBColorProtocol = RGBTestEndColor()) {
+        self.startColor = startColor
+        self.endColor = endColor
+    }
 }
