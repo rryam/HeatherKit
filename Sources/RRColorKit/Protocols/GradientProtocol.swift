@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-protocol GradientProtocol {
+public protocol GradientProtocol {
     var startColor: ColorProtocol { get set }
     var endColor: ColorProtocol { get set }
 
@@ -15,7 +15,7 @@ protocol GradientProtocol {
 }
 
 extension GradientProtocol {
-    func new() -> Gradient {
+    public func new() -> Gradient {
         Gradient(colors: [startColor.new(), endColor.new()])
     }
 }

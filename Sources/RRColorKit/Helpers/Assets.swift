@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Assets {
+public struct Assets {
     // MARK:- SF Symbols
     static let minus = "minus"
     static let plus = "plus"
@@ -23,7 +23,7 @@ struct Assets {
     static let relax = "bolt.heart"
 }
 
-struct Constants {
+public struct Constants {
     static var random: Double {
         Double.random(in: 0...1)
     }

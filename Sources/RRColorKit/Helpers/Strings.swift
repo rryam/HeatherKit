@@ -7,20 +7,20 @@
 
 import Foundation
 
-struct TitleText {
+public struct TitleText {
     static let history = "history"
     static let gradientGame = "gradient game".uppercased()
     static let chromaGame = "chroma game".uppercased()
     static let settings = "settings".uppercased()
 }
 
-struct HeaderText {
+public struct HeaderText {
     static let target = "target".uppercased()
     static let yours = "yours".uppercased()
     static let overallScore = "Overall score".uppercased()
 }
 
-struct ButtonText {
+public struct ButtonText {
     static let share = "share".uppercased()
     static let evaluate = "Evaluate".uppercased()
     static let tryAgain = "try again".uppercased()
@@ -28,11 +28,11 @@ struct ButtonText {
     static let showScore = "show".uppercased()
 }
 
-struct TabText {
+public struct TabText {
 
 }
 
-struct LinkText {
+public struct LinkText {
     static let creatorTwitterApp = "twitter://user?screen_name=rudrankriyam"
     static let creatorTwitterWeb = "https://www.twitter.com/rudrankriyam"
     static let creatorMail = "rudrankriyam@gmail.com"
@@ -42,7 +42,7 @@ struct LinkText {
     static let gradientTwitterWeb = "https://www.twitter.com/gradientsgame"
 }
 
-enum TabItemType: Int, CaseIterable {
+public enum TabItemType: Int, CaseIterable {
     case rgb = 1
     case hsb
     case cmyk

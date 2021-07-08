@@ -7,23 +7,23 @@
 
 import SwiftUI
 
-protocol ColorProtocol {
+public protocol ColorProtocol {
     func new() -> Color
 }
 
-protocol RGBColorProtocol: ColorProtocol {
+public protocol RGBColorProtocol: ColorProtocol {
     var red: Double { get set }
     var green: Double { get set }
     var blue: Double { get set }
 }
 
 extension RGBColorProtocol {
-    func new() -> Color {
+    public func new() -> Color {
         Color(red: red, green: green, blue: blue)
     }
 }
 
-protocol HSBColorProtocol: ColorProtocol {
+public protocol HSBColorProtocol: ColorProtocol {
     var hue: Double { get set }
     var saturation: Double { get set }
     var brightness: Double { get set }
@@ -35,7 +35,7 @@ extension HSBColorProtocol {
     }
 }
 
-protocol CMYKColorProtocol: ColorProtocol {
+public protocol CMYKColorProtocol: ColorProtocol {
     var cyan: Double { get set }
     var magenta: Double { get set }
     var yellow: Double { get set }
@@ -48,7 +48,7 @@ extension CMYKColorProtocol {
     }
 }
 
-extension Color {
+public extension Color {
     init(cyan: Double, magenta: Double, yellow: Double, black: Double) {
         let red = (1 - cyan) * (1 - black)
         let green = (1 - magenta) * (1 - black)
