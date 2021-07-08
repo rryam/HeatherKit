@@ -30,7 +30,7 @@ public protocol HSBColorProtocol: ColorProtocol {
 }
 
 extension HSBColorProtocol {
-    func new() -> Color {
+    public func new() -> Color {
         Color(hue: hue, saturation: saturation, brightness: brightness)
     }
 }
@@ -43,7 +43,7 @@ public protocol CMYKColorProtocol: ColorProtocol {
 }
 
 extension CMYKColorProtocol {
-    func new() -> Color {
+    public func new() -> Color {
         Color(cyan: cyan, magenta: magenta, yellow: yellow, black: black)
     }
 }

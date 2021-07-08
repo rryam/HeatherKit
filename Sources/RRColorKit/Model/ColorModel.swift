@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// MARK: - RGB
 public class RGBRandomColor: RGBColorProtocol {
     public var red: Double
     public var green: Double
@@ -101,5 +102,48 @@ public class RGBUserEndColor: RGBColorProtocol {
         self.red = red
         self.green = green
         self.blue = blue
+    }
+}
+
+// MARK: - CMYK
+public class CMYKRandomColor: CMYKColorProtocol {
+    public var cyan: Double
+    public var magenta: Double
+    public var yellow: Double
+    public var black: Double
+    
+    public init(cyan: Double = Constants.random, magenta: Double = Constants.random, yellow: Double = Constants.random, black: Double = Constants.random) {
+        self.cyan = cyan
+        self.magenta = magenta
+        self.yellow = yellow
+        self.black = black
+    }
+}
+
+public class CMYKUserColor: CMYKColorProtocol {
+    public var cyan: Double
+    public var magenta: Double
+    public var yellow: Double
+    public var black: Double
+    
+    public init(cyan: Double = 0.00, magenta: Double = 0.00, yellow: Double = 0.00, black: Double = 0.31) {
+        self.cyan = cyan
+        self.magenta = magenta
+        self.yellow = yellow
+        self.black = black
+    }
+}
+
+public class CMYKTestColor: CMYKColorProtocol {
+    public var cyan: Double
+    public var magenta: Double
+    public var yellow: Double
+    public var black: Double
+    
+    public init(cyan: Double = 0.84, magenta: Double = 0.31, yellow: Double = 0.00, black: Double = 0.52) {
+        self.cyan = cyan
+        self.magenta = magenta
+        self.yellow = yellow
+        self.black = black
     }
 }
