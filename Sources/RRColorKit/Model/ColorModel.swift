@@ -54,7 +54,6 @@ public class RGBTestEndColor: RGBColorProtocol {
         self.green = green
         self.blue = blue
     }
-    
 }
 
 public class RGBLogoStartColor: RGBColorProtocol {
@@ -105,6 +104,31 @@ public class RGBUserEndColor: RGBColorProtocol {
     }
 }
 
+// MARK: - HSB
+public class HSBRandomColor: HSBColorProtocol {
+    public var hue: Double
+    public var saturation: Double
+    public var brightness: Double
+    
+    public init(hue: Double = Constants.random, saturation: Double = Constants.random, brightness: Double = Constants.random) {
+        self.hue = hue
+        self.saturation = saturation
+        self.brightness = brightness
+    }
+}
+
+public class HSBInitialColor: HSBColorProtocol {
+    public var hue: Double
+    public var saturation: Double
+    public var brightness: Double
+    
+    public init(hue: Double = 0/360, saturation: Double = 0/100, brightness: Double = 74/100) {
+        self.hue = hue
+        self.saturation = saturation
+        self.brightness = brightness
+    }
+}
+
 // MARK: - CMYK
 public class CMYKRandomColor: CMYKColorProtocol {
     public var cyan: Double
@@ -120,7 +144,7 @@ public class CMYKRandomColor: CMYKColorProtocol {
     }
 }
 
-public class CMYKUserColor: CMYKColorProtocol {
+public class CMYKInitialColor: CMYKColorProtocol {
     public var cyan: Double
     public var magenta: Double
     public var yellow: Double
