@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -25,6 +25,11 @@
 		0A4840C125E820A30079AC14 /* GradientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4840C025E820A30079AC14 /* GradientProtocol.swift */; };
 		0A4840C925E820F80079AC14 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4840C825E820F80079AC14 /* Strings.swift */; };
 		0A4840D325E8226E0079AC14 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4840D225E8226E0079AC14 /* Assets.swift */; };
+		0A7C37A8269CB3BE0023538C /* RGBResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C37A7269CB3BE0023538C /* RGBResultView.swift */; };
+		0A7C37AB269CB48F0023538C /* RRComponentsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0A7C37AA269CB48F0023538C /* RRComponentsKit */; };
+		0A7C37AD269CBBC50023538C /* ResultTypeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C37AC269CBBC50023538C /* ResultTypeProtocol.swift */; };
+		0A7C37AF269CBBD90023538C /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C37AE269CBBD90023538C /* ResultType.swift */; };
+		0A7C37B1269CBC120023538C /* ResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C37B0269CBC120023538C /* ResultRow.swift */; };
 		0AAC560C269C675400F15E7A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC560B269C675400F15E7A /* String.swift */; };
 		0AAC560E269C677800F15E7A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC560D269C677800F15E7A /* Color.swift */; };
 		0AC2F8DC26979D23002AE72A /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC2F8DB26979D23002AE72A /* ColorModel.swift */; };
@@ -58,6 +63,10 @@
 		0A4840C025E820A30079AC14 /* GradientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientProtocol.swift; sourceTree = "<group>"; };
 		0A4840C825E820F80079AC14 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		0A4840D225E8226E0079AC14 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		0A7C37A7269CB3BE0023538C /* RGBResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBResultView.swift; sourceTree = "<group>"; };
+		0A7C37AC269CBBC50023538C /* ResultTypeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTypeProtocol.swift; sourceTree = "<group>"; };
+		0A7C37AE269CBBD90023538C /* ResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
+		0A7C37B0269CBC120023538C /* ResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRow.swift; sourceTree = "<group>"; };
 		0AAC560B269C675400F15E7A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		0AAC560D269C677800F15E7A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0AC2F8DB26979D23002AE72A /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
@@ -77,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				0A7C37AB269CB48F0023538C /* RRComponentsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +106,7 @@
 			children = (
 				0A4840BA25E820800079AC14 /* ColorProtocol.swift */,
 				0A4840C025E820A30079AC14 /* GradientProtocol.swift */,
+				0A7C37AC269CBBC50023538C /* ResultTypeProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -107,6 +118,15 @@
 				0A4840D225E8226E0079AC14 /* Assets.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A7C37A6269CB3AC0023538C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A7C37A7269CB3BE0023538C /* RGBResultView.swift */,
+				0A7C37B0269CBC120023538C /* ResultRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0AAC560A269C673A00F15E7A /* Extensions */ = {
@@ -123,6 +143,7 @@
 			children = (
 				0AC2F8DB26979D23002AE72A /* ColorModel.swift */,
 				0AC2F8DD26979E65002AE72A /* GradientModel.swift */,
+				0A7C37AE269CBBD90023538C /* ResultType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* RRColorKit.swift */,
+				0A7C37A6269CB3AC0023538C /* Views */,
 				0AC2F8DA26979D18002AE72A /* Model */,
 				0A4840C725E820EB0079AC14 /* Helpers */,
 				0A4840C625E820DD0079AC14 /* Protocols */,
@@ -202,6 +224,9 @@
 			dependencies = (
 			);
 			name = RRColorKit;
+			packageProductDependencies = (
+				0A7C37AA269CB48F0023538C /* RRComponentsKit */,
+			);
 			productName = RRColorKit;
 			productReference = "RRColorKit::RRColorKit::Product" /* RRColorKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -254,6 +279,9 @@
 				en,
 			);
 			mainGroup = OBJ_5;
+			packageReferences = (
+				0A7C37A9269CB48F0023538C /* XCRemoteSwiftPackageReference "RRComponentsKit" */,
+			);
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -272,12 +300,16 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_24 /* RRColorKit.swift in Sources */,
+				0A7C37AD269CBBC50023538C /* ResultTypeProtocol.swift in Sources */,
 				0A4840C125E820A30079AC14 /* GradientProtocol.swift in Sources */,
 				0A4840BB25E820800079AC14 /* ColorProtocol.swift in Sources */,
 				0AC2F8DE26979E65002AE72A /* GradientModel.swift in Sources */,
+				0A7C37B1269CBC120023538C /* ResultRow.swift in Sources */,
 				0AC2F8DC26979D23002AE72A /* ColorModel.swift in Sources */,
+				0A7C37AF269CBBD90023538C /* ResultType.swift in Sources */,
 				0A4840D325E8226E0079AC14 /* Assets.swift in Sources */,
 				0AAC560C269C675400F15E7A /* String.swift in Sources */,
+				0A7C37A8269CB3BE0023538C /* RGBResultView.swift in Sources */,
 				0A4840C925E820F80079AC14 /* Strings.swift in Sources */,
 				0AAC560E269C677800F15E7A /* Color.swift in Sources */,
 			);
@@ -327,7 +359,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RRColorKit.xcodeproj/RRColorKit_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -355,7 +390,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RRColorKit.xcodeproj/RRColorKit_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -441,7 +479,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RRColorKit.xcodeproj/RRColorKitTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -473,7 +515,8 @@
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -490,7 +533,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RRColorKit.xcodeproj/RRColorKitTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -552,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A7C37A9269CB48F0023538C /* XCRemoteSwiftPackageReference "RRComponentsKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rudrankriyam/RRComponentsKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A7C37AA269CB48F0023538C /* RRComponentsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A7C37A9269CB48F0023538C /* XCRemoteSwiftPackageReference "RRComponentsKit" */;
+			productName = RRComponentsKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = OBJ_1 /* Project object */;
 }

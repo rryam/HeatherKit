@@ -18,3 +18,9 @@ public extension String {
         return Color(red: red, green: green, blue: blue)
     }
 }
+
+public extension String {
+    var symbol: String {
+        "\(self.first?.description.uppercased() ?? ""): "
+    }
+}
