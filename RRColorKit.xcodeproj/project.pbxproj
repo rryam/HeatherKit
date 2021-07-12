@@ -25,6 +25,8 @@
 		0A4840C125E820A30079AC14 /* GradientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4840C025E820A30079AC14 /* GradientProtocol.swift */; };
 		0A4840C925E820F80079AC14 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4840C825E820F80079AC14 /* Strings.swift */; };
 		0A4840D325E8226E0079AC14 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4840D225E8226E0079AC14 /* Assets.swift */; };
+		0AAC560C269C675400F15E7A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC560B269C675400F15E7A /* String.swift */; };
+		0AAC560E269C677800F15E7A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC560D269C677800F15E7A /* Color.swift */; };
 		0AC2F8DC26979D23002AE72A /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC2F8DB26979D23002AE72A /* ColorModel.swift */; };
 		0AC2F8DE26979E65002AE72A /* GradientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC2F8DD26979E65002AE72A /* GradientModel.swift */; };
 		OBJ_24 /* RRColorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* RRColorKit.swift */; };
@@ -56,6 +58,8 @@
 		0A4840C025E820A30079AC14 /* GradientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientProtocol.swift; sourceTree = "<group>"; };
 		0A4840C825E820F80079AC14 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		0A4840D225E8226E0079AC14 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		0AAC560B269C675400F15E7A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		0AAC560D269C677800F15E7A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0AC2F8DB26979D23002AE72A /* ColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 		0AC2F8DD26979E65002AE72A /* GradientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientModel.swift; sourceTree = "<group>"; };
 		OBJ_12 /* RRColorKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRColorKitTests.swift; sourceTree = "<group>"; };
@@ -103,6 +107,15 @@
 				0A4840D225E8226E0079AC14 /* Assets.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0AAC560A269C673A00F15E7A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0AAC560B269C675400F15E7A /* String.swift */,
+				0AAC560D269C677800F15E7A /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		0AC2F8DA26979D18002AE72A /* Model */ = {
@@ -164,10 +177,11 @@
 		OBJ_8 /* RRColorKit */ = {
 			isa = PBXGroup;
 			children = (
-				0AC2F8DA26979D18002AE72A /* Model */,
 				OBJ_9 /* RRColorKit.swift */,
+				0AC2F8DA26979D18002AE72A /* Model */,
 				0A4840C725E820EB0079AC14 /* Helpers */,
 				0A4840C625E820DD0079AC14 /* Protocols */,
+				0AAC560A269C673A00F15E7A /* Extensions */,
 			);
 			name = RRColorKit;
 			path = Sources/RRColorKit;
@@ -263,7 +277,9 @@
 				0AC2F8DE26979E65002AE72A /* GradientModel.swift in Sources */,
 				0AC2F8DC26979D23002AE72A /* ColorModel.swift in Sources */,
 				0A4840D325E8226E0079AC14 /* Assets.swift in Sources */,
+				0AAC560C269C675400F15E7A /* String.swift in Sources */,
 				0A4840C925E820F80079AC14 /* Strings.swift in Sources */,
+				0AAC560E269C677800F15E7A /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
