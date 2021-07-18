@@ -32,6 +32,18 @@ public class RGBInitialColor: RGBColorProtocol {
     }
 }
 
+public class RGBTestColor: RGBColorProtocol {
+    public var red: Double
+    public var green: Double
+    public var blue: Double
+    
+    public init(red: Double = 20/255, green: Double = 90/255, blue: Double = 120/255) {
+        self.red = red
+        self.green = green
+        self.blue = blue
+    }
+}
+
 public class RGBTestStartColor: RGBColorProtocol {
     public var red: Double
     public var green: Double
@@ -111,6 +123,18 @@ public class HSBRandomColor: HSBColorProtocol {
     public var brightness: Double
     
     public init(hue: Double = Constants.random, saturation: Double = Constants.random, brightness: Double = Constants.random) {
+        self.hue = hue
+        self.saturation = saturation
+        self.brightness = brightness
+    }
+}
+
+public class HSBTestColor: HSBColorProtocol {
+    public var hue: Double
+    public var saturation: Double
+    public var brightness: Double
+    
+    public init(hue: Double = 50/360, saturation: Double = 20/100, brightness: Double = 50/100) {
         self.hue = hue
         self.saturation = saturation
         self.brightness = brightness
