@@ -9,23 +9,23 @@ import Foundation
 
 public struct TitleText {
     public static let history = "history"
-    public static let gradientGame = "gradient game".uppercased()
-    public static let chromaGame = "chroma game".uppercased()
-    public static let settings = "settings".uppercased()
+    public static let gradientGame = "gradient game".lowercased()
+    public static let chromaGame = "chroma game".lowercased()
+    public static let settings = "settings".lowercased()
 }
 
 public struct HeaderText {
-    public static let target = "target".uppercased()
-    public static let yours = "yours".uppercased()
-    public static let overallScore = "Overall score".uppercased()
+    public static let target = "target".lowercased()
+    public static let yours = "yours".lowercased()
+    public static let overallScore = "Overall score".lowercased()
 }
 
 public struct ButtonText {
-    public static let share = "share".uppercased()
-    public static let evaluate = "Evaluate".uppercased()
-    public static let tryAgain = "try again".uppercased()
-    public static let next = "next".uppercased()
-    public static let showScore = "show".uppercased()
+    public static let share = "share".lowercased()
+    public static let evaluate = "Evaluate".lowercased()
+    public static let tryAgain = "try again".lowercased()
+    public static let next = "next".lowercased()
+    public static let showScore = "show".lowercased()
 }
 
 public struct TabText {
@@ -57,7 +57,7 @@ public enum TabItemType: Int, CaseIterable {
     case more
     
     public var name: String {
-        String(describing: self).uppercased()
+        String(describing: self).lowercased()
     }
     
     public var image: String {

@@ -21,6 +21,6 @@ public extension String {
 
 public extension String {
     var symbol: String {
-        "\(self.first?.description.uppercased() ?? ""): "
+        "\(self.first?.description.lowercased() ?? ""): "
     }
 }
