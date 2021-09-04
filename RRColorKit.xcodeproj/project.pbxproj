@@ -26,12 +26,13 @@
 		0A4840C925E820F80079AC14 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4840C825E820F80079AC14 /* Strings.swift */; };
 		0A4840D325E8226E0079AC14 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4840D225E8226E0079AC14 /* Assets.swift */; };
 		0A7C37A8269CB3BE0023538C /* RGBResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C37A7269CB3BE0023538C /* RGBResultView.swift */; };
-		0A7C37AB269CB48F0023538C /* RRComponentsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0A7C37AA269CB48F0023538C /* RRComponentsKit */; };
 		0A7C37AD269CBBC50023538C /* ResultTypeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C37AC269CBBC50023538C /* ResultTypeProtocol.swift */; };
 		0A7C37AF269CBBD90023538C /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C37AE269CBBD90023538C /* ResultType.swift */; };
 		0A7C37B1269CBC120023538C /* ResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C37B0269CBC120023538C /* ResultRow.swift */; };
 		0AAC560C269C675400F15E7A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC560B269C675400F15E7A /* String.swift */; };
 		0AAC560E269C677800F15E7A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAC560D269C677800F15E7A /* Color.swift */; };
+		0AAEF74426E378AB00240174 /* RRComponentsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0AAEF74326E378AB00240174 /* RRComponentsKit */; };
+		0AAEF74526E378AB00240174 /* RRComponentsKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 0AAEF74326E378AB00240174 /* RRComponentsKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0AC2F8DC26979D23002AE72A /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC2F8DB26979D23002AE72A /* ColorModel.swift */; };
 		0AC2F8DE26979E65002AE72A /* GradientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC2F8DD26979E65002AE72A /* GradientModel.swift */; };
 		OBJ_24 /* RRColorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* RRColorKit.swift */; };
@@ -57,6 +58,20 @@
 			remoteInfo = RRColorKitTests;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AAEF74126E3786400240174 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AAEF74526E378AB00240174 /* RRComponentsKit in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A4840BA25E820800079AC14 /* ColorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProtocol.swift; sourceTree = "<group>"; };
@@ -86,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				0A7C37AB269CB48F0023538C /* RRComponentsKit in Frameworks */,
+				0AAEF74426E378AB00240174 /* RRComponentsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +233,7 @@
 			buildPhases = (
 				OBJ_23 /* Sources */,
 				OBJ_25 /* Frameworks */,
+				0AAEF74126E3786400240174 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,7 +241,7 @@
 			);
 			name = RRColorKit;
 			packageProductDependencies = (
-				0A7C37AA269CB48F0023538C /* RRComponentsKit */,
+				0AAEF74326E378AB00240174 /* RRComponentsKit */,
 			);
 			productName = RRColorKit;
 			productReference = "RRColorKit::RRColorKit::Product" /* RRColorKit.framework */;
@@ -280,7 +296,7 @@
 			);
 			mainGroup = OBJ_5;
 			packageReferences = (
-				0A7C37A9269CB48F0023538C /* XCRemoteSwiftPackageReference "RRComponentsKit" */,
+				0AAEF74226E378AB00240174 /* XCRemoteSwiftPackageReference "RRComponentsKit" */,
 			);
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
@@ -443,7 +459,7 @@
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,7 +525,7 @@
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -601,20 +617,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0A7C37A9269CB48F0023538C /* XCRemoteSwiftPackageReference "RRComponentsKit" */ = {
+		0AAEF74226E378AB00240174 /* XCRemoteSwiftPackageReference "RRComponentsKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rudrankriyam/RRComponentsKit.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0A7C37AA269CB48F0023538C /* RRComponentsKit */ = {
+		0AAEF74326E378AB00240174 /* RRComponentsKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A7C37A9269CB48F0023538C /* XCRemoteSwiftPackageReference "RRComponentsKit" */;
+			package = 0AAEF74226E378AB00240174 /* XCRemoteSwiftPackageReference "RRComponentsKit" */;
 			productName = RRComponentsKit;
 		};
 /* End XCSwiftPackageProductDependency section */
