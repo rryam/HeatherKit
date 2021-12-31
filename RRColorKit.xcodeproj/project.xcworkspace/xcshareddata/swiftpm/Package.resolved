@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RRComponentsKit",
+        "repositoryURL": "https://github.com/rudrankriyam/RRComponentsKit.git",
+        "state": {
+          "branch": "main",
+          "revision": "e2b8370c8d24c65633581e4dc976d8ff50537dbf",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
