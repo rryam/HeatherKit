@@ -9,11 +9,11 @@ let package = Package(
     products: [
         .library(
             name: "RRColorKit",
-            type: .dynamic,
+            type: .static,
             targets: ["RRColorKit"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/rudrankriyam/RRComponentsKit.git", from: "0.2.0")
+        .package(url: "https://github.com/rudrankriyam/RRComponentsKit.git", from: "0.3.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
