@@ -20,7 +20,8 @@ public struct ResultRow<T: ResultTypeProtocol>: View {
     
     public var body: some View {
         Text(type.symbol + "\(Int(value * step))")
-            .blurredBackgroundText()
+          //  .blurredBackgroundText()
+            .foregroundColor(.red)
     }
 }
 
