@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
   name: "RRColorKit",
-  platforms: [.iOS(.v15), .visionOS(.v1)],
+  platforms: [.iOS(.v16), .visionOS(.v1)],
   products: [
     .library(
       name: "RRColorKit",
