@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import RRComponentsKit
 
 public struct RGBResultView: View {
     var color: RGBColorProtocol
@@ -16,7 +15,7 @@ public struct RGBResultView: View {
     }
     
     public var body: some View {
-        AStack(type: .color) {
+        VStack {
             ResultRow(RGBResultType.red, color.red)
             
             ResultRow(RGBResultType.green, color.green)
@@ -34,7 +33,7 @@ public struct HSBResultView: View {
     }
     
     public var body: some View {
-        AStack(type: .color) {
+        VStack {
             ResultRow(HSBResultType.hue, color.hue, 360)
             
             ResultRow(HSBResultType.saturation, color.saturation, 100)
@@ -54,7 +53,7 @@ public struct CMYKResultView: View {
     private let step = 100.0
     
     public var body: some View {
-        AStack(type: .color) {
+        VStack {
             ResultRow(CMYKResultType.cyan, color.cyan, step)
             
             ResultRow(CMYKResultType.magenta, color.magenta, step)
