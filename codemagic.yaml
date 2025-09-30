@@ -14,13 +14,13 @@ definitions:
             -skipPackagePluginValidation
             
 workflows:
-  rrcolorkit:
-    name: RRColorKit Workflow
+  heatherkit:
+    name: HeatherKit Workflow
     instance_type: mac_mini_m1
     environment:
-      xcode: 14.2
+      xcode: 26.0
       vars:
-        XCODE_SCHEME: RRColorKit
+        XCODE_SCHEME: HeatherKit
         DESTINATION: "platform=iOS Simulator,name=iPhone 14"
     triggering:
       <<: *events

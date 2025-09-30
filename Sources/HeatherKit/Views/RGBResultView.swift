@@ -1,6 +1,6 @@
 //
 //  RGBResultView.swift
-//  RRColorKit
+//  HeatherKit
 //
 //  Created by Rudrank Riyam on 12/07/21.
 //

@@ -1,7 +1,7 @@
 import XCTest
 
-import RRColorKitTests
+import HeatherKitTests
 
 var tests = [XCTestCaseEntry]()
-tests += RRColorKitTests.allTests()
+tests += HeatherKitTests.allTests()
 XCTMain(tests)

@@ -1,3 +1,3 @@
-struct RRColorKit {
+struct HeatherKit {
     var text = "Hello, World!"
 }

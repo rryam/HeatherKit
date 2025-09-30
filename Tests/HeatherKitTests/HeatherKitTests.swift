@@ -1,12 +1,12 @@
 import XCTest
-@testable import RRColorKit
+@testable import HeatherKit
 
-final class RRColorKitTests: XCTestCase {
+final class HeatherKitTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(RRColorKit().text, "Hello, World!")
+        XCTAssertEqual(HeatherKit().text, "Hello, World!")
     }
 
     static var allTests = [

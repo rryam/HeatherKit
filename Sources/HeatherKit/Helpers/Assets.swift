@@ -1,6 +1,6 @@
 //
 //  Assets.swift
-//  RRColorKit
+//  HeatherKit
 //
 //  Created by Rudrank Riyam on 25/02/21.
 //
