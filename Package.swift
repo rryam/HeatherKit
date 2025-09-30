@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
   name: "HeatherKit",
-  platforms: [.iOS(.v26), .visionOS(.v1)],
+  platforms: [.iOS(.v26), .visionOS(.v1), .macOS(.v26)],
   products: [
     .library(
       name: "HeatherKit",
