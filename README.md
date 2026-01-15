@@ -1,4 +1,6 @@
 # HeatherKit
+[![Star History Chart](https://api.star-history.com/svg?repos=rryam/HeatherKit&type=Date)](https://star-history.com/#rryam/HeatherKit&Date)
+
 
 <p align="center">
   <img width="250" height="250" src="https://github.com/rudrankriyam/RRColorKit/blob/main/RRColorKitIcon.png">
