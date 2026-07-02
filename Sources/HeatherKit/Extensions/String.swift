@@ -22,7 +22,8 @@ public extension String {
     /// ```
     var color: Color {
         var hexNumber: UInt64 = 0
-        _ = Scanner(string: self).scanHexInt64(&hexNumber)
+        let hexString = hasPrefix("#") ? String(dropFirst()) : self
+        _ = Scanner(string: hexString).scanHexInt64(&hexNumber)
 
         let red = Double((hexNumber & 0xFF0000) >> 16) / 255
         let green = Double((hexNumber & 0x00FF00) >> 8) / 255

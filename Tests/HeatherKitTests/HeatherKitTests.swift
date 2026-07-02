@@ -112,8 +112,8 @@ func testCMYKGradient() {
 
 @Test("String to Color conversion works for hex values")
 func testStringToColor() {
-    let redHex = "FF0000"
-    let _ = redHex.color // Successfully creates a Color
+    #expect("FF0000".color.hex == "FF0000")
+    #expect("#00FF00".color.hex == "00FF00")
 }
 
 @Test("String symbol extraction works")
