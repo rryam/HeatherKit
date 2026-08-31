@@ -14,5 +14,3 @@ This will contain -
 - Shared strings
 - Shared assets
 - Custom modifiers
-
-[![Star History Chart](https://api.star-history.com/svg?repos=rryam/HeatherKit&type=Date)](https://star-history.com/#rryam/HeatherKit&Date)
